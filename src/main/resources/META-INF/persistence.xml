@@ -5,12 +5,12 @@
              version="3.0">
     <persistence-unit name="default" transaction-type="JTA">
         <jta-data-source>jdbc/ParkingLotResource</jta-data-source>
-        <class>com.parking.parkingLot.entities.User</class>
-        <class>com.parking.parkingLot.entities.Car</class>
+        <class>org.example.parkinglot.entities.User</class>
+        <class>org.example.parkinglot.entities.Cars</class>
 
         <properties>
 
-            <property name="jakarta.persistence.schema-generation.database.action" value="create-or-extend-tables" />
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
 
         </properties>
 
